@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  AdBlock
+//
+//  Created by Tommy on 2019/5/21.
+//  Copyright © 2019 Tommy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define AppID @""
+
+#define SWITCHKG @"switchkg"
+#define APP_EXTENSION_NAME @"com.lysh.AdBlock.AdContentBlocker"
+
+//常用宏
+#define kDeviceStatusHeight  [UIApplication sharedApplication].statusBarFrame.size.height
+#define kDeviceWidth  [UIScreen mainScreen].bounds.size.width
+#define kDeviceHeight [UIScreen mainScreen].bounds.size.height
+
+#define MainColor [UIColor colorWithHexString:@"#242E34"]
+#define WaveColor [UIColor colorWithHexString:@"#32BAFA"]
+
+#import "UIColor+ColorChange.h"
+#import "PJGWave.h"
+#import "UIView+Frame.h"
+//#import <SVProgressHUD.h>
+#endif /* PrefixHeader_pch */
