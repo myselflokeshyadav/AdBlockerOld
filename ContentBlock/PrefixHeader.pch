@@ -9,10 +9,11 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#define AppID @""
+#define AppID @"1465102514"
 
 #define SWITCHKG @"switchkg"
-#define APP_EXTENSION_NAME @"com.lysh.AdBlock.AdContentBlocker"
+
+#define APP_EXTENSION_NAME @"com.lysh.ContentBlock.MyBlock"
 
 //常用宏
 #define kDeviceStatusHeight  [UIApplication sharedApplication].statusBarFrame.size.height
@@ -25,5 +26,4 @@
 #import "UIColor+ColorChange.h"
 #import "PJGWave.h"
 #import "UIView+Frame.h"
-//#import <SVProgressHUD.h>
 #endif /* PrefixHeader_pch */

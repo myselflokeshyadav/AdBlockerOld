@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomePageViewController.h"
+#import <UMCommon/UMCommon.h>
 @interface AppDelegate ()
 
 @end
@@ -16,7 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSDictionary *info = [bundle infoDictionary];
+    NSString *prodName = [info objectForKey:@"CFBundleDisplayName"];
+    [UMConfigure initWithAppkey:@"5ceb495f4ca357c491000254" channel:prodName];
+    
+    
+    self.window.rootViewController = [[HomePageViewController alloc] init];
     return YES;
 }
 
